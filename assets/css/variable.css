@@ -1,0 +1,62 @@
+body {
+  overflow-x: hidden;
+}
+
+.hide-scroll {
+  overflow: hidden;
+}
+
+.container {
+  margin: 0 auto;
+  display: block;
+  box-sizing: border-box;
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 1320px;
+    margin: 0 auto;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
+
+.container-with-padding {
+  padding: 0 16px;
+}
+@media (min-width: 768px) {
+  .container-with-padding {
+    padding: 0 100px;
+  }
+}
+
+.vertical-line {
+  width: 1px;
+  height: 14px;
+  background-color: #E5E8EC;
+}
+
+.horizontal-line {
+  width: 100vw !important;
+  padding: 0 !important;
+  height: 1px;
+  background-color: #E5E8EC;
+  margin: 20px 0 !important;
+}
+
+.more-information {
+  transform: rotate(180deg);
+  width: 6px;
+  height: 10px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateX(-500px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}/*# sourceMappingURL=variable.css.map */

@@ -1,0 +1,69 @@
+
+body {
+    overflow-x: hidden ;
+}
+
+$primaryColor: #2B38D1;
+$opacityColor: #E5E8EC;
+$white: white;
+$black: black;
+$fontColor: #212529;
+$fontThinColor: #515D66;
+$background: #F1F5F6;
+$opacityFont : #8D979E;
+
+.hide-scroll {
+	overflow: hidden;
+}
+.container {
+    margin: 0 auto;
+    display: block;
+    box-sizing: border-box;
+    @media (min-width: 768px) {
+        max-width: 1320px;
+    margin: 0 auto;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    }
+    
+}
+
+.container-with-padding {
+    padding: 0 16px;
+    @media (min-width: 768px) {
+        padding: 0 100px;
+    }
+}
+
+.vertical-line {
+    width: 1px;
+    height: 14px;
+    background-color: $opacityColor;
+}
+
+.horizontal-line {
+    width: 100vw!important;;
+    padding: 0 !important;;
+    height: 1px;
+    background-color: $opacityColor;
+    margin: 20px 0 !important;
+}
+
+.more-information {
+    transform: rotate(180deg);
+    width: 6px;
+    height: 10px;
+}
+
+
+@keyframes fadeIn {
+    from{
+        opacity: 0;
+        transform: translateX(-500px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
